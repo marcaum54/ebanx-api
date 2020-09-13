@@ -2,6 +2,8 @@
 
 require_once '../vendor/autoload.php';
 
+error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+
 use app\Helpers\Http;
 use app\Helpers\Router;
 

@@ -16,7 +16,7 @@ class Json
 
     static function write($path, $params)
     {
-        file_put_contents($path, json_decode($params), true);
+        file_put_contents($path, json_encode($params));
         return self::read($path);
     }
 }

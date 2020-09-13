@@ -31,8 +31,15 @@ class Controller
             die(strval($response['body']));
     }
 
-    public function requestGET() { }
-    public function requestPOST() { }
+    public function requestGET()
+    {
+        Http::header_not_found();
+    }
+    
+    public function requestPOST()
+    {
+        Http::header_not_found();
+    }
     
     public function notFoundResponse()
     {
